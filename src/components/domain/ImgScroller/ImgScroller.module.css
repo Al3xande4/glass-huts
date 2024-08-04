@@ -1,0 +1,93 @@
+.container {
+	max-width: 1408px;
+	aspect-ratio: 2 / 1;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	position: relative;
+}
+.cover {
+	position: absolute;
+	max-width: 1408px;
+	aspect-ratio: 2 / 1;
+	
+
+	background-color: rgba(0, 0, 0, 0.1);
+	z-index: 1;
+}
+
+.img {
+	max-width: 1408px;
+	width: 100%;
+	aspect-ratio: 2 / 1;
+
+	position: relative;
+	grid-column: 1 / -1;
+	overflow: hidden;
+}
+
+.img-container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+
+	transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition-duration: 1s;
+	transition-property: all;
+}
+
+.progress_bar {
+	position: absolute;
+	left: 40px;
+	top: 95px;
+	outline: none;
+	border: 1.5px solid rgba(255, 255, 255, 0.261);
+	margin: 0;
+	height: 400px;
+	
+	z-index: 2;
+}
+
+.progress {
+	position: absolute;
+	left: 40px;
+	top: 95px;
+	outline: none;
+	border: 1.5px solid rgba(255, 255, 255);
+	margin: 0;
+	
+	z-index: 2;
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition-duration: 1s;
+	transition-property: all;
+}
+
+.back, .forward {
+	position: absolute;
+	border: none;
+	background-color: transparent;
+
+	z-index: 2;
+	bottom: 84px;
+
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition-duration: 0.25s;
+	transition-property: all;
+}
+
+.back:hover, .forward:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.back {
+	margin-right: 75px;
+}
+
+.forward {
+	margin-left: 75px;
+}

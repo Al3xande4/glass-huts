@@ -1,0 +1,170 @@
+.preview {
+	text-align: center;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.preview-img {
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+
+	width: 100%;
+	height: 100%;
+	max-height: 350px;
+
+	object-fit: cover;
+}
+
+.preview-info {
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+}
+
+.preview-btn {
+	padding: 14px 30px;
+	margin-top: 50px;
+
+	background-color: transparent;
+
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 28px;
+	letter-spacing: 1px;
+	color: #FFF;
+	text-transform: uppercase;
+
+	border: 1px solid #FFF;
+}
+
+.preview-btn:hover{
+	cursor: pointer;
+}
+
+.about {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+
+	margin-top: 150px;
+}
+
+.about-info {
+	margin: 0 140px;
+
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 30px;
+	color: var(--text-secondary-color);
+}
+
+.about img {
+	max-width: 547px;
+	aspect-ratio: 547 / 487;
+
+	object-fit: cover;
+}
+
+.title {
+	max-width: 570px;
+	margin: 0 auto;
+	margin-top: 150px;
+
+	line-height: 56px;
+}
+
+.gallery {
+	list-style: none;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+
+}
+
+.gallery img {
+	width: 100%;
+	height: 100%;
+}
+
+.big-img {
+	grid-column: 2 / -1;
+}
+
+.gallery-text {
+	background-color: var(--secondary-color);
+
+	padding: 122px 67px;
+
+	font-size: 20px;
+	font-weight: 400;
+	font-style: italic;
+	line-height: 36px;
+	color: var(--text-secondary-color);
+}
+
+.in-touch {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	padding: 150px 146px;
+
+	padding-bottom: 0px;
+}
+
+.in-touch-info {
+	padding: 0;
+	margin: 0;
+
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 30px;
+	color: #000000;
+}
+
+.place-info {
+	margin-bottom: 20px;
+}
+
+.socials {
+	margin: 0;
+	padding: 0;
+	margin-top: 50px;
+
+	list-style: none;
+
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+}
+
+.with-love {
+	width: 125px;
+	height: 100px;
+	margin: 150px auto;
+	display: flex;
+	justify-content: center;
+}
+
+.form {
+	margin-top: 100px;
+}
