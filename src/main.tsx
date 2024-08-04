@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { Layout } from './layouts/Layout/Layout';
 import HomePage from './pages/Home/Home';
 import { AreaPage } from './pages/Area/Area';
@@ -9,7 +9,7 @@ import { HutPage } from './pages/Hut/Hut';
 import { AboutPage } from './pages/About/About';
 import { FaqPage } from './pages/Faq/Faq';
 
-const Router = createBrowserRouter([
+const Router = createHashRouter([
 	{
 		path: '/',
 		element: <Layout />,
